@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_301051702
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
+        MainForm mainForm = new MainForm();
+        MainForm.Show()
+        StartForm.Hide()
     }
 }
