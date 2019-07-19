@@ -8,6 +8,10 @@ namespace COMP123_S2019_Lab10_301051702
 {
     static class Program
     {
+        public static MainForm mainForm;
+        public static StartForm startForm;
+        public static EndForm endForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,6 +20,9 @@ namespace COMP123_S2019_Lab10_301051702
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            mainForm = new MainForm();
+            startForm = new StartForm();
+            endForm = new EndForm();
             Application.Run(new StartForm());
         }
     }

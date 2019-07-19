@@ -16,8 +16,16 @@ namespace COMP123_S2019_Lab10_301051702
         {
             InitializeComponent();
         }
-        MainForm mainForm = new MainForm();
-        MainForm.Show()
-        StartForm.Hide()
+        
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.endForm.Show();
+            Program.mainForm.Hide();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

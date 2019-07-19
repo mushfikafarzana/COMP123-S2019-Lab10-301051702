@@ -35,7 +35,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 25);
+            this.label1.Location = new System.Drawing.Point(217, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(299, 31);
             this.label1.TabIndex = 0;
@@ -43,12 +43,13 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(167, 182);
+            this.NextButton.Location = new System.Drawing.Point(649, 495);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(93, 39);
             this.NextButton.TabIndex = 1;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // MainForm
             // 
@@ -64,6 +65,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
